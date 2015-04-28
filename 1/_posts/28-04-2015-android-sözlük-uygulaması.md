@@ -26,7 +26,7 @@ Uygulama kodları adım adım aşağıda verlmiştir.
 
 
 
-<img src ="http://i.hizliresim.com/vEg9DD.png">
+<img src ="http://i.hizliresim.com/MEE54g.png">
 
 1.satıra kadar olan bölümde  veritabanı adı, tablo adı,kolon isimleri ve veritabanı versiyonu için birer static sabit tanımı yapılır. 1.satırdaki sabit içerisinde de tablonun create sql cümleciği koyulur. Bu sql cümleciğinin, değer olarak aşağıdaki sql cümleciğinden hiçbir farkı yoktur.
 
@@ -112,7 +112,7 @@ Uygulamada kullanılan çeşitli renk kodlarına  [http://www.color-hex.com/](ht
 
 `main.xml` dosyası içerindeki düzenlemeler tamalandıktan sonra  MainActivity sınıfı aşağıdaki  hale getirilir.
 
-<img src ="http://i.hizliresim.com/YBvXNl.png">
+<img src ="http://i.hizliresim.com/VVV5Gv.png">
 
 1.bölümde görüldüğü üzere activity onCreate metodu çağrılarak başlatılır. Bu metod içerisinde activity’nin layout dosya ismi `setContentView` metodu ile belirtilir.Bu metod ile bu sınıf sayfanın olduğu xml dosyasına bağlanmış olur. 
 
@@ -188,7 +188,7 @@ Bu metod içerisinde  kullanıcı tarafından İngilizce bir kelime girildiğind
 1.satırda Cursor nesnesi  ile `kelimeSorgula` metoduna daha önce bahsettiğimiz ad değişkeni referans verilerek çağrılır. Daha sonra if ile Cursor nesnesinin boş olup olmadığı kontrol edilerek boş ise bir Toast mesajı gönderilmesi sağlanır. Cursor nesnesi bir sonraki veriyi işaret eder.Daha sonra `COLUMN_ID` ile belirtilen kolon adı aracılığıyla ilgili kolonun index değeri döndürülür. Bir sonraki adımda  2. Sütunda bulunan bilgi alınarak sonuç gösterecek olan EditText’ e yazılır.
 
 
-<img src ="http://i.hizliresim.com/a5oOkO.png">
+<img src ="http://i.hizliresim.com/1yymbN.png">
 
 
 
@@ -207,7 +207,7 @@ Bu metod içerisinde  kullanıcı tarafından Türkçe bir kelime girildiğinde 
 
 `getKelimeİng` metodu tarafından çağrılan `wordQuery` metodu aşağıdaki gibidir.
 
-<img src ="http://i.hizliresim.com/j54lYm.png ">
+<img src ="http://i.hizliresim.com/BMMm7L.png ">
 
 Bu metod içerisinde 1. satırda belli bir kelime adına sahip satıra erişmek  için where clause kullanılır.Bu ifadede kullanılan “?”  buraya herhangi bir argümanın konulabileceği  anlamına gelmektedir.
  
@@ -249,7 +249,7 @@ Daha önceden oluşturulan `SecondActivity` sınıfı `MainAcivity `sınıfı i�
 
 3.satırda `onCreate` metodu içerisinden `ekranKontrolleriniOluştur()` metodu çağrılır.
 
-<img src ="http://i.hizliresim.com/YBvzOa.png">
+<img src ="http://i.hizliresim.com/MEE539.png">
 
 
 Bu kısımda `ekranKontrolleriniOlustur()` adında kendi  yarattığımız  bir constructor metod çağrılır. `ekranKontrolleriniOlustur()`  metodu içerisinde buton, listView ve editText’ler oluşturularak  veri girişinin yapılması  ve butona tıklama sonucunda çağrılacak metodlar ile  girilen verilerin listelenmesi için çağrılacak metodlar tanımlanır.
@@ -260,7 +260,7 @@ Bu kısımda `ekranKontrolleriniOlustur()` adında kendi  yarattığımız  bir 
 Yukarıda görülen kodlar ile kelime listesini oluşturacak ListView tanımlanır. `onItemClickListener` metodu ile listede kelime seçme işlemlerinin işleyişi belirtilir.
 
 
-<img src ="http://i.hizliresim.com/rQgP0M.png">
+<img src ="http://i.hizliresim.com/a55JZg.png">
 
 
 Daha sonraki kısımda `kelimeSorgula`  adında, String tipinde bir referansa sahip metod bulunmaktadır.
@@ -290,7 +290,7 @@ Query işlemi için Cursor sınıfına ihtiyaç duyduğumuz gibi,ekleme(insert) 
 > **INSERT (EKLEME):**
 
 
-<img src ="http://i.hizliresim.com/vEgM24.png">
+<img src ="http://i.hizliresim.com/yMM8k9.png">
 
 Insert etmek istenilen kelime için content values nesnesi üzerinden kelimenin ad ve açıklama değerleri girilip insert metodu çağrılır ve eklenen satır id ‘si  sonuç olarak döndürülür.
 
@@ -298,7 +298,7 @@ Insert etmek istenilen kelime için content values nesnesi üzerinden kelimenin 
 > **UPDATE (GÜNCELLEME):**
 
 
-<img src ="http://i.hizliresim.com/DMlnjm.png">
+<img src ="http://i.hizliresim.com/l772VB.png">
 
 
 `kelimeEkle` metoduna benzer bir yapıya sahiptir. Tek fark güncellenecek olan satırın hangisi olduğunu bilmememiz gerekmektedir.Önce content values nesnesi  yardımı ile güncel satır değerleri oluşturulur.Sonra  `getKelimeId` metodu kullanılarak güncellemek istenilen ad değerine sahip satırın `COLUMN_ID`  kolonunun değeri elde edilir."where" cümleciğinde  bu kez doğrudan id değeri verildi.Bir sonraki argüman yani "whereArgs" için null kullanıldı.update fonksiyonu çağrıldığında güncelleme işlemi tamamlanmış olacaktır.
@@ -306,7 +306,7 @@ Insert etmek istenilen kelime için content values nesnesi üzerinden kelimenin 
 
 > **DELETE (SİLME):**
 
-<img src ="http://i.hizliresim.com/zAmdX9.png">
+<img src ="http://i.hizliresim.com/b55Am0.png">
 
 Silme işlemi için sadece silmek istenilen satırın id’sinin bilinmesi yeterlidir.`kelimeGüncelle` metodunda oluğu gibi silinmesi istenilen satırın id değeri okunur.Daha sonra "where" ifadesi oluşturulur ve delete fonksiyonuna argüman olarak verilir.
 
@@ -320,7 +320,7 @@ Daha sonra Cursor veri tipinde bir değer döndüren `butunKelimeleriSorgula ` a
 
 Daha sonra `editTextGuncelle` metodu oluşturulur.
 
-<img src ="http://i.hizliresim.com/Nq5z6N.png">
+<img src ="http://i.hizliresim.com/g55zab.png">
 
 
 `editTextGüncelle` metodunda Cursor nesnesinden faydalanarak ad ve açıklama alanlarının değişmesi durumununun sağlanması tanımlaır. `listeGüncelle` metodunda ise EditText’te güncelenen kelimenin listeye aktarım işlemi yapılır.
@@ -338,7 +338,7 @@ SimpleCursorAdapter  sınıfı datayı Content Provider(İçerik Sağlayıcılar
 
 Bu sınıf içerisinde `SecondActivity` sınıfındaki ListView listesine insert (ekleme) işlemi ile bu listeye yeni kelime ekleme,update(güncelleme) işlemi ile listedeki kelimenin güncellenmesi ve delete(silme) işlemi ile listeden kelime silinmesi işlemleri gerçekleşir.
 
-<img src ="http://i.hizliresim.com/g5k7nR.jpg">
+<img src ="http://i.hizliresim.com/2ggmXN.jpg">
 
 
 ### 5.NOTIFICATION OLUŞTURULMASI
@@ -356,7 +356,7 @@ Bir servise arkaplanda çalışan bir activity ile aynı önceliği atamak mümk
 Notification mesajlarından biri  olan “Daha iyi bir çeviri için katkıda bulunun.” mesajına sistem barında görünür. Tıklandığında ise `SecondActivity`'i çalıştırır.
 
 
-<img src ="http://i.hizliresim.com/b5ln2b.jpg">
+<img src ="http://i.hizliresim.com/l772aE.jpg">
 
 
 
